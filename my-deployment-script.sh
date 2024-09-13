@@ -48,9 +48,7 @@ else
 	chmod 740 /usr/local/cScripts/RemoveUser.sh
 
 	echo "#!/bin/bash
-	userdel \$1
-	rm -rf /home/\$1
-	rm /var/mail/\$1
+	userdel -r \$1
 	sed -i \"/^$/d; s/\${1}//g\" \"/usr/local/cScripts/users.conf\"" >> /usr/local/cScripts/RemoveUser.sh
 	echo "Created RemoveUser script"
 fi
