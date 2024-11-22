@@ -7,3 +7,6 @@ Contents:
 4. RemoveUser.sh script creation: Deletes a user, and removes the user from the users.conf file.
 5. Passwd_extend.sh script creation: Referencing the users.conf file, this will reset the password for each user contained within.
 6. Cronjob creation: This will run the passwd_extend.sh script every night at midnight.
+
+UPDATE:
+- Script has been updated with passwd_ext2.sh
